@@ -2,7 +2,7 @@ import json
 import requests
 
 #GET example, returns list of Users
-#this is an example of a program calling an API ('GET Request'), return all records (likely from a database table)
+#this is an example of a program calling an API ('GET Request'), return all records (likely from a database (database table)
 api_url = "https://reqres.in/api/users"
 
 def get_data():

@@ -2,7 +2,7 @@
 from flask import Flask, jsonify
 
 #run this program and browse to http://127.0.0.1:5000/books to see the response.
-
+#this is an example of a webserver (Flask) exposing an API; the 'data' returned in in the books array, below.
 app = Flask(__name__)
 
 books = [
