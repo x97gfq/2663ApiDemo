@@ -1,7 +1,11 @@
 import json
 import requests
 
-#https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Crime-Severity-Index/w64p-5ue3
+#Example of a program consuming an Open Data API
+#Info: https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Crime-Severity-Index/w64p-5ue3
+#Public API: https://data.novascotia.ca/resource/w64p-5ue3.json
+#The API returns all records, so we'll only print out records where the property 'geography' contains the search_term
+
 api_url = "https://data.novascotia.ca/resource/w64p-5ue3.json"
 search_term = "Barrington"
 

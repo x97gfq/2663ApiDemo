@@ -2,6 +2,7 @@ import json
 import requests
 
 #UPDATE example, updates a user's details
+#this is an example of a program calling an API ('PUT Request') w/data payload to update a record in a database
 api_url = "https://reqres.in/api/users"  
     
 def update_data(userId, name, job):
@@ -12,7 +13,7 @@ def update_data(userId, name, job):
     else:
         return None
 
-info = update_data("7","Fred Flintstone","Quality Assurance") #User details passed into function, record to update
+info = update_data("766","Fred Flintstone","Quality Assurance") #User details passed into function, record to update
 
 #evaluate the service response
 if info is not None:

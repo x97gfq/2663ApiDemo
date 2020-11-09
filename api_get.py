@@ -2,6 +2,7 @@ import json
 import requests
 
 #GET example, returns list of Users
+#this is an example of a program calling an API ('GET Request'), return all records (likely from a database table)
 api_url = "https://reqres.in/api/users"
 
 def get_data():
@@ -19,6 +20,6 @@ if info is not None:
         email = item["email"]
         firstname = item["first_name"]
         lastname = item["last_name"]
-        print('Firstname: {0} Lastname: {1} Email {2}'.format(firstname, lastname, email))
+        print(' {0} {1}  {2}'.format(firstname, lastname, email))
 else:
     print('[!] GET Request Failed')

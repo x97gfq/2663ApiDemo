@@ -1,6 +1,12 @@
 import json
 import requests
 
+#Example of a program consuming an Open Data API
+#Info: https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Incidents-and-rates-by-offence-ca/daey-6b54
+#Public API: https://data.novascotia.ca/resource/daey-6b54.json
+#The API returns all records, so we'll only print out records where the property 'geography' contains the search_term
+#This examples differs from main.py in that we're using a class, CrimeInfo.
+
 class CrimeInfo:
     def __init__(self,_year = 0, _incidents = 0, _rates = 0, _violations = ""):
         self.year = _year
@@ -8,7 +14,6 @@ class CrimeInfo:
         self.rates = _rates
         self.violations = _violations
 
-#https://data.novascotia.ca/Crime-and-Justice/Crime-Statistics-Incidents-and-rates-by-offence-ca/daey-6b54
 api_url = "https://data.novascotia.ca/resource/daey-6b54.json"
 search_term = "Barrington"
 
